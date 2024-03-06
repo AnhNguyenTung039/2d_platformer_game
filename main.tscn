@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=3 uid="uid://yk35hs2sdxol"]
+[gd_scene load_steps=7 format=3 uid="uid://yk35hs2sdxol"]
 
 [ext_resource type="Texture2D" uid="uid://2durfxd3xyls" path="res://Green.png" id="1_wc313"]
 [ext_resource type="Texture2D" uid="uid://cj4yciqt21niu" path="res://Terrain (16x16).png" id="2_ckiu8"]
 [ext_resource type="PackedScene" uid="uid://xsdqusmr12p3" path="res://scene/main_character.tscn" id="3_tx4a0"]
+[ext_resource type="PackedScene" uid="uid://btbyfr218fui1" path="res://scene/collectable.tscn" id="4_mlaqa"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_mnc60"]
 texture = ExtResource("2_ckiu8")
@@ -486,3 +487,6 @@ position = Vector2(1.2517e-06, 5.96046e-08)
 scale = Vector2(0.333333, 0.333333)
 position_smoothing_enabled = true
 position_smoothing_speed = 7.0
+
+[node name="Collectable" parent="." instance=ExtResource("4_mlaqa")]
+position = Vector2(376, 465)
